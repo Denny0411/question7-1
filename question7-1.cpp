@@ -19,7 +19,6 @@ void judge(int num)
     {
         if(num % fromOneToNum == 0)
         {
-            cout << fromOneToNum << endl;
             divisorNum++;
         }
         fromOneToNum++;
@@ -27,5 +26,16 @@ void judge(int num)
     if(divisorNum == 2)
     {
         cout << "質數";
+    }
+    else
+    {   int fromOneToNum = 1;
+        while(fromOneToNum <= num)
+        {
+            if(num % fromOneToNum == 0)
+            {
+                cout << fromOneToNum << endl;
+            }
+            fromOneToNum++;
+        }
     }
 }
