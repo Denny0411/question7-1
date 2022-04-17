@@ -28,7 +28,8 @@ void judge(int num)
         cout << "質數";
     }
     else
-    {   int fromOneToNum = 1;
+    {   
+        int fromOneToNum = 1;
         while(fromOneToNum <= num)
         {
             if(num % fromOneToNum == 0)
